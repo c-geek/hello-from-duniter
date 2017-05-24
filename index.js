@@ -7,6 +7,7 @@ module.exports = {
     cli: [{
       name: 'hello-world',
       desc: 'Says hello from \`duniter\` command.',
+      logs: false,
       onDatabaseExecute: (server, conf, program, params) => co(function*() {
         console.log('Hello from within Duniter! (v1.0.1)')
       })
